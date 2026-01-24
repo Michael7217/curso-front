@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1" class="box c1">html</div>
+    <div id="div2" class="box c1">css</div>
+    <div id="div3" class="box c1">javascript</div>
+    <div id="div4" class="box c1">dbgd</div>
+    <div id="div5" class="box c1">dnsubvud</div>
+    <div id="div6" class="box c2">vhuj vhd</div>
+    <div id="div7" class="box c2">vvhu</div>
+    <div id="div8" class="box c2">vubvu</div>
+    <div id="div9" class="box c2">vvnev</div>
+    <div id="div10" class="box c2">vevh</div>
+<script>                /* spread ... */
+    const cursos = [...document.getElementsByClassName("box")];
+    const csc1 = [...document.getElementsByClassName("c1")];
+    const csc2 = [...document.getElementsByClassName("c2")];
+
+    console.log(cursos);
+    console.log(csc1);
+    console.log(csc2);    
+
+    csc1.map((elem) => {
+        elem.classList.add("destaque");
+    })
+
+   /*  cursos.map(Elem => {
+        Elem.classList.add("destaque");
+    }) */
+
+</script>
+</body>
+</html>

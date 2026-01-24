@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1" class="box c1">html</div>
+    <div id="div2" class="box c1">css</div>
+    <div id="div3" class="box c1">javascript</div>
+    <div id="div4" class="box c1">dbgd</div>
+    <div id="div5" class="box c1">dnsubvud</div>
+    <div id="div6" class="box c2">vhuj vhd</div>
+    <div id="div7" class="box c2">vvhu</div>
+    <div id="div8" class="box c2">vubvu</div>
+    <div id="div9" class="box c2">vvnev</div>
+    <div id="div10" class="box c2">vevh</div>
+<script>   
+
+const cursos = [...document.querySelectorAll(".box")];
+    cursos.forEach((botao)=>{
+        botao.addEventListener("click", (evt)=>{
+            botao.classList.add("destaque");
+            alert(`${botao.textContent} foi clicado`)
+        })
+    });
+    /* cursos.map((el)=>{
+        el.addEventListener("click",(evt)=>{
+            const el = evt.target;
+            el.classList.add("destaque")
+            console.log(el.innerHTML + ' foi clicado');
+            msg();
+
+        })
+    }); */
+
+    
+</script>
+</body>
+</html>

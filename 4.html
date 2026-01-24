@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1" class="box c1"><p>html</p></div>
+    <div id="div2" class="box c1"><p>css</p></div>
+    <div id="div3" class="box c1"><p>javascript</p></div>
+    <div id="div4" class="box c1">dbgd</div>
+    <div id="div5" class="box c1">dnsubvud</div>
+    <div id="div6" class="box c2">vhuj vhd</div>
+    <div id="div7" class="box c2">vvhu</div>
+    <div id="div8" class="box c2">vubvu</div>
+    <div id="div9" class="box c2">vvnev</div>
+    <div id="div10" class="box c2">vevh</div>
+    <p class="box">hsuvhusu</p>
+    <p class="box">gnsdnunvu</p>
+
+<script>           /* spread ... */
+    const querydivs = 
+    document.querySelector("div2");
+    /* retorna o primeiro elemento encontrado */
+    console.log(querydivs);
+    /* retorna todos os elementos */
+    const queryalldivs = 
+    [...document.querySelectorAll(".c1, p")];
+
+    console.log(queryalldivs);
+
+    const queryallc1 = 
+    [...document.querySelectorAll(".c1")];
+    const queryallc2 = 
+    [...document.querySelectorAll(".c2")];
+    const pdiv = [...document.querySelectorAll("div > p")];
+    
+    console.log(queryallc1);
+    console.log(queryallc2);
+    console.log(pdiv);
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica</title>
+    <link rel="stylesheet" href="ap1.css">
+</head>
+<body>
+    <header><h1>colocar nas caixas</h1></header>
+    <main>
+    <div id="caixa1" class="container">
+        <div class="curso">html</div>
+        <div class="curso">css</div>
+        <div class="curso">javascript</div>
+        <div class="curso">php</div>
+        <div class="curso">react</div>
+        <div class="curso">MySQL</div>
+    </div>
+    <section id="btns">
+    <button id="copiar">copiar -></button>
+    <button id="adicionar">adicionar</button>
+    <button id="retornar"><- retornar</button>
+    </section>
+    <div id="caixa2" class="container"></div>
+    </main>
+    <script>
+       const caixa1 = document.querySelector("#caixa1")
+       const caixa2 = document.querySelector("#caixa2")
+       const cursos = [...document.querySelectorAll(".curso")]
+       const copiar = document.querySelector("#copiar")
+       const retornar = document.querySelector("#retornar")
+       const adicionar = document.querySelector("#adicionar")
+       
+       
+       cursos.map((el)=>{
+        el.addEventListener("click", (evt)=>{
+            const curso = evt.target;
+            curso.classList.toggle("selecionado") /* se o nao tiver a classe ele insere, se ja tiver ele remove*/
+            
+        })
+    })
+    copiar.addEventListener("click",()=>{
+        const selecionados = [...document.querySelectorAll(".selecionado")]
+        selecionados.map((elem)=>{
+            caixa2.appendChild(elem);
+        })
+
+    })
+    retornar.addEventListener("click",()=>{
+        const selecionados = [...document.querySelectorAll(".selecionado")]
+        selecionados.map((elem)=>{
+            caixa1.appendChild(elem)
+            console.log(selecionados)
+        })
+    })
+   /*  const novoelem = document.createElement("div")
+    novoelem.innerHTML="python"
+    novoelem.setAttribute("class", "curso")
+    caixa1.appendChild(novoelem) */
+    </script>
+</body>
+</html>
