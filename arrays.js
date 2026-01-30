@@ -87,7 +87,7 @@ let some = pedidos.some(pedido => {
 });
 console.log(some);
 /* soma os itens correspondentes no array */
-let pedido = pedidos.reduce((total, pedido) => {
+let total = pedidos.reduce((total, pedido) => {
     let {preco} = pedido;
     return total += preco;
 
