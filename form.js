@@ -1,26 +1,28 @@
-class pessoa{
+function pessoa(nome, idade){
     //construtor pede parametro obrigatorio
-    constructor(nome, idade){
+   /*  constructor(nome, idade){
         this.nome=nome
         this.idade=idade
-    }
+    } */
+    this.nome=nome,
+    this.idade=idade,
     //metodos
-    info(){
+    this.getnome=function(){
+        return this.nome
+    },
+    this.getidade=function(){
+        return this.idade
+    },
+    
+    this.setnome=function(nome){
+        this.nome=nome
+    },
+    this.setidade=function(idade){
+        this.idade=idade
+    },
+    this.info=function(){
         console.log(`nome: ${this.nome}`)
         console.log(`idade: ${this.idade}`)
-    }
-    getnome=()=>{
-        return this.nome
-    }
-    getidade=()=>{
-        return this.idade
-    }
-   
-    setnome(nome){
-        this.nome=nome
-    }
-    setidade(idade){
-        this.idade=idade
     }
 }
 
