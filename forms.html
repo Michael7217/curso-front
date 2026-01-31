@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            transform: scale(1.5);
+        }
+        .inp{
+            border-radius: 5%;
+        }
+        #adicionar{
+            margin-top: 20px;
+            height: 30px;
+        }
+        #quadro{
+            border: 10px solid black;
+            margin: 50px;
+            height: 400px;
+        }
+        .pessoa{
+            border: 5px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome" class="inp">
+            <label for="idade">idade</label>
+            <input type="text" name="idade" id="idade" class="inp">
+            <button id="adicionar">adicionar</button>
+        </div>
+        <div id="quadro"></div>
+    </main>
+    <script src="form.js"></script>
+</body>
+</html>
