@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carros</title>
+    <link rel="stylesheet" href="carros.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Cadastrar carros</h1>
+        </nav>
+        <div class="cad">
+            <div id="inps">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" class="inp" id="nome">
+            <label for="portas">Portas</label>
+            <input type="number" name="portas" class="inp" id="portas" value="0">
+            <label for="blindagem">Blindagem</label>
+            <input type="number" name="blindagem" class="inp" id="blindagem" disabled value="0">
+            <label for="muni">Muni</label>
+            <input type="number" name="muni" class="inp" id="muni" disabled value="0">
+            </div>
+        </div>
+        <div id="tipo" class="cad">
+            <p>tipo</p>
+            <label for="militar">
+                <input type="radio" name="tipo" id="militar" value="m">
+                 Militar
+            </label>
+            <label for="normal">
+                <input type="radio" name="tipo" id="normal" value="n" checked>
+                Normal
+            </label>
+            <button id="adicionar">Adicionar</button>
+        </div>
+        <div id="carros"></div>
+    </main>
+    <script src="carros.js"></script>
+</body>
+</html>

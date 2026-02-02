@@ -1,0 +1,76 @@
+html{
+    background: #ccc;
+}
+p{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav{
+   text-align: center;
+   border: 1px solid black;
+   background: linear-gradient(rgb(75, 75, 152), white, #ccc);
+   border-radius: 5px;
+   margin-bottom: 10px;
+   color: #2a386a;
+}
+.cad{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+#inps {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 80%;
+    padding-left: 25%;
+}
+.inp{
+    width: 70%;
+    height: 20px;
+    margin: 5px;
+}
+
+#adicionar{
+    width: 120px;
+    height: 30px;
+    border: none;
+    background: #048;
+    color: #ccc;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.adc{
+    width: calc((100% - 5px));
+    height: 30px;
+    border: none;
+    background: #048;
+    color: #ccc;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#carros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.carro{
+    width: calc((100% - 40px)/5);
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}

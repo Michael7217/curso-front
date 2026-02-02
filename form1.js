@@ -28,7 +28,8 @@ p1.nome='mnndsgnsd'
 p2["nome"] = "biodsmimsio"
 pessoa.setnome("wigeuing") */
 
-/* console.log(pessoa.nome)
+/* 
+console.log(pessoa.nome)
 console.log(p1.nome)
 console.log(p2.nome)
 console.log(p2.getnome()) */
