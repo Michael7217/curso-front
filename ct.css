@@ -1,0 +1,50 @@
+* {
+  border: none;
+  font-size: larger;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0px;
+}
+.quadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #332b2b;
+  border-radius: 10px;
+  height: 5vh;
+  text-align: center;
+  color: green;
+  
+}
+#data {
+  display: flex;
+  justify-content: center;
+}
+#tela{
+    background: #ccc;
+    border-radius: 5px;
+}
+#temp{
+    display: flex;
+}
+input{
+    background: #999;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#comandos{
+    display: flex;
+    justify-content: center;
+
+
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+}
+.alarme{
+    background: red !important; 
+}
