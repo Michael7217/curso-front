@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegação e historico</title>
+    <link rel="stylesheet" href="navegar.css">
+</head>
+<body>
+    <h1>cfb cursos</h1>
+    <form onsubmit="event.preventDefault()">
+        <input type="url" name="url" id="url" placeholder="https://www.youtube.com/watch?v=aAdw_U7uTyE&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T&index=88" pattern="https://." size="30" required>
+        <button  id="btn_url">Ir</button>
+    </form>
+    <script src="navegar.js"></script>
+</body>
+</html>
